@@ -61,7 +61,7 @@ describe('physics engine', () => {
 
 describe('ranking, graph & PSI registry', () => {
   it('links curated investigations to all 24 official PSI combustion records', () => {
-    expect(INVESTIGATIONS.length).toBe(25);
+    expect(INVESTIGATIONS.length).toBe(26);
     expect(PSI_REGISTRY.combustion_investigations).toBe(24);
     const linkedAccessions = new Set(
       INVESTIGATIONS.map((i) => i.psi?.accession).filter((a): a is string => Boolean(a))
@@ -77,7 +77,7 @@ describe('ranking, graph & PSI registry', () => {
   it('ranks investigations with 7 decomposed components and builds hardware graph', () => {
     const lunar = PRESETS['Lunar Base / Rover (0.16g, 10.2 psi, 30% O2)'];
     const ranked = rankInvestigations(INVESTIGATIONS, lunar);
-    expect(ranked.length).toBe(25);
+    expect(ranked.length).toBe(26);
     expect(ranked[0].components.length).toBe(7);
     expect(ranked[0].score).toBeGreaterThan(ranked[ranked.length - 1].score);
 
@@ -139,5 +139,13 @@ describe('hybrid retrieval & source-firewall copilot', () => {
       )
     ).toBe(true);
     expect(ans.auditTrail.some((s) => s.step === 'Conversational memory context')).toBe(true);
+  });
+
+  it('runs Graph RAG subgraph traversal over PSI-117 and cool flame dynamics', async () => {
+    const { queryGraphRag } = await import('../graphRag');
+    const res = queryGraphRag('What are the cool flame dynamics in PSI-117?');
+    expect(res.matchedEntityIds.includes('PSI-117')).toBe(true);
+    expect(res.subgraph.nodes.some((n) => n.id === 'phenom:cool_flames')).toBe(true);
+    expect(res.subgraph.paths.length).toBeGreaterThan(0);
   });
 });

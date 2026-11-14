@@ -3,8 +3,9 @@ import { findVerbatimRunMatches } from './psiRuns';
 import { parametricQuery, rankInvestigations } from './ranking';
 import { Hit, HybridIndex, parseQuery } from './retrieval';
 import { INVESTIGATIONS, Investigation } from './schema';
+import { queryGraphRag } from './graphRag';
 
-const MARKER_RE = /\[(kb:p\d+:\d+|inv:[A-Za-z0-9\-._]+|psi:PSI-\d+:[A-Za-z0-9\-._]+|custom:[A-Za-z0-9\-._]+)\]/g;
+const MARKER_RE = /\[(kb:[A-Za-z0-9\-._:]+|inv:[A-Za-z0-9\-._]+|psi:PSI-\d+:[A-Za-z0-9\-._]+|graph:[A-Za-z0-9\-._]+|custom:[A-Za-z0-9\-._]+)\]/g;
 
 export interface AuditStep {
   step: string;
@@ -134,8 +135,27 @@ export async function askCopilot(
       .join(', ')})`,
   });
 
+  // Graph RAG Knowledge Graph Subgraph Traversal (Graphify + LangChain pattern)
+  const graphResult = queryGraphRag(retrievalQuery);
+  if (graphResult.matchedEntityIds.length > 0) {
+    auditTrail.push({
+      step: 'Graph RAG Subgraph Traversal (Graphify)',
+      detail: `Extracted ${graphResult.subgraph.nodes.length} nodes & ${graphResult.subgraph.edges.length} edges around [${graphResult.matchedEntityIds.join(', ')}]`,
+    });
+  }
+
   const validMarkers = new Set<string>(hits.map((h) => h.chunk.id));
   INVESTIGATIONS.forEach((inv) => validMarkers.add(`inv:${inv.id}`));
+  for (const n of graphResult.subgraph.nodes) {
+    validMarkers.add(`graph:${n.id}`);
+    if (n.id.startsWith('incident:')) validMarkers.add(`kb:incident:${n.id.replace('incident:', '')}`);
+    if (n.id.startsWith('spinoff:')) validMarkers.add(`kb:spinoff:${n.id.replace('spinoff:', '')}`);
+    if (n.id.startsWith('PSI-117')) {
+      validMarkers.add('kb:psi117:overview');
+      validMarkers.add('kb:psi117:dynamics');
+      validMarkers.add('kb:psi117:safety');
+    }
+  }
 
   const qResult = hasFilters ? parametricQuery(INVESTIGATIONS, parsed.filters) : null;
   const ranked = rankInvestigations(INVESTIGATIONS, env).slice(0, 4);
@@ -263,6 +283,7 @@ export async function askCopilot(
             ...verbatimRuns.map((vr) => `[psi:${vr.accession}:r${vr.rowIndex}] ${vr.summary}`),
           ]
         : []),
+      ...(graphResult.contextText ? [graphResult.contextText] : []),
       'TOP RANKED INVESTIGATIONS:',
       ...ranked.map(
         (r) =>
@@ -273,7 +294,7 @@ export async function askCopilot(
     const systemPrompt = `You are FLIRA, the NASA PSI Fire Safety Analyst.
 Hard rules:
 1. Use ONLY the CONTEXT below. No outside knowledge or invented numbers.
-2. Cite EVERY factual sentence with [kb:pN:i], [inv:ID], or [psi:PSI-XX:rN] copied verbatim from CONTEXT.
+2. Cite EVERY factual sentence with [kb:...], [inv:ID], [psi:PSI-XX:rN], or [graph:NODE] copied verbatim from CONTEXT.
 3. Preserve NASA reported values/ranges verbatim. Never invent mm/s spread rates.
 4. PSI has NO empirical partial-gravity data (LUCI and FM2 have not flown). State that explicitly if asked about Moon/Mars/partial gravity.
 5. Keep response concise (4-6 sentences).`;
