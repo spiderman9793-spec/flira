@@ -1,0 +1,46 @@
+[
+  {
+    "id": "firemans-air-tanks",
+    "title": "Firefighter's Lightweight Air Tanks & SCBA",
+    "spinoff_id": "9582",
+    "originating_program": "Apollo & Skylab Portable Life Support System (PLSS)",
+    "year": "1970s",
+    "technology_transfer": "NASA Johnson Space Center partnered with the National Bureau of Standards and fire service leaders to transfer composite filament-wound pressure vessel technology used in astronaut spacesuits to terrestrial firefighting.",
+    "key_innovation": "Replaced heavy, unwieldy 30-to-35 lb forged steel air cylinders with seamless aluminum liners wrapped in resin-impregnated fiberglass or Kevlar filaments, operating at 4,500 psi.",
+    "earth_impact": "Reduced cylinder weight by 40% to 50% while increasing air duration from 30 to 45–60 minutes. Slashed firefighter cardiac arrest rates, chronic spinal strain, and physical fatigue. Standardized modern Self-Contained Breathing Apparatus (SCBA) used by municipal fire departments worldwide.",
+    "url": "https://spinoff.nasa.gov/node/9582"
+  },
+  {
+    "id": "fire-detector",
+    "title": "False-Alarm Discriminating Fire & Smoke Detector",
+    "spinoff_id": "9407",
+    "originating_program": "Space Shuttle (STS) Orbiter Fire Detection Program",
+    "year": "1970s–1980s",
+    "technology_transfer": "Engineers developing the Space Shuttle cabin environmental monitoring system designed an ionization and optical scattering sensor that distinguished between harmful smoke aerosol particulates and non-hazardous cabin dust or moisture.",
+    "key_innovation": "Multi-wavelength particle-size discrimination and dual-chamber ionization capable of rejecting large dust motes (>5 microns) while triggering instantly on sub-micron combustion soot.",
+    "earth_impact": "Commercialized for harsh terrestrial environments prone to false alarms—such as underground coal mines, metallurgical mills, chemical processing plants, and server data centers. Prevents costly factory shutdowns and alarm fatigue.",
+    "url": "https://spinoff.nasa.gov/node/9407"
+  },
+  {
+    "id": "fire-attire",
+    "title": "Advanced Firefighter Protective Attire & PBI Textiles",
+    "spinoff_id": "9918",
+    "originating_program": "Apollo 1 Materials Redesign & Space Shuttle Thermal Suits",
+    "year": "1980s",
+    "technology_transfer": "Following the Apollo 1 pad tragedy, NASA collaborated with Celanese Corporation to commercialize Polybenzimidazole (PBI) synthetic fiber, which NASA utilized for astronaut flight suits and Apollo spacecraft interior fabrics.",
+    "key_innovation": "PBI fiber does not ignite, burn in air, or melt/drip even when exposed to direct flames exceeding 1,000°F (540°C), retaining structural tensile strength and breathability.",
+    "earth_impact": "Adopted by the firefighting industry in the 1980s as the gold-standard outer shell for structural firefighting turnout coats and bunker pants. PBI blends (PBI/Kevlar) protect hundreds of thousands of municipal firefighters across the globe against flashover burns.",
+    "url": "https://spinoff.nasa.gov/node/9918"
+  },
+  {
+    "id": "water-mist-suppression",
+    "title": "Micro-Droplet Fine Water Mist Fire Extinguishment",
+    "spinoff_id": "ISS-FLEX",
+    "originating_program": "ISS Combustion Integrated Rack (CIR) & FLEX Droplet Studies",
+    "year": "2000s–Present",
+    "technology_transfer": "Droplet combustion research in microgravity revealed that ultra-fine water droplets (<50 microns) extract heat by rapid phase-change vaporization, displacing oxygen through localized steam expansion without flooding.",
+    "key_innovation": "High-pressure atomization nozzles creating high-surface-area droplet fog that cools the combustion zone orders of magnitude faster than conventional deluge sprinklers.",
+    "earth_impact": "Eliminates ozone-depleting Halon extinguishers in maritime shipping, historical archives, museums, computer server rooms, and telecommunication switches, extinguishing fires with 90% less water and zero water-damage.",
+    "url": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/combustion-science/"
+  }
+]

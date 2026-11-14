@@ -1,0 +1,275 @@
+[
+  {
+    "id": "kb:p1:0",
+    "text": "For decades, NASA has studied how flames and fire behave in microgravity, gathering a trove of exper User prompt: For decades, NASA has studied how flames and fire behave in microgravity, gathering a trove of experimental data along the way. That knowledge matters more than ever as humans gear up to return to the Moon and press on to Mars, yet the volume of results makes them hard to find, compare, and understand. Your challenge is to create an interactive, super intelligence (SI) powered dashboard that summarizes, ranks, and interprets those findings to deliver fire safety insights for human space exploration. Background Fire hazards are extremely dangerous in space exploration! In describing a smoke alarm that went off during the recent Artemis II mission, the commander commented, \u201c[If] you want to get somebody\u2019s attention really quick, make the fire alarm go off in your spacecraft whe",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:1",
+    "text": "rtemis II mission, the commander commented, \u201c[If] you want to get somebody\u2019s attention really quick, make the fire alarm go off in your spacecraft when you\u2019re still about 80,000 miles from home.\u201d Decades earlier, the Apollo 13 crew endured the life-threatening results of an oxygen tank explosion on their way to the Moon. Similarly, a multinational crew survived a fire aboard the Mir space station caused by an oxygen generator failure. In 1967, the Apollo 1 crew died in a pre- launch test when fire erupted in their oxygen-filled spacecraft. Compared to Earth, flames in free fall (i.e., in microgravity) are often dramatically different because of the absence of buoyancy and thus rising hot gases. Instead of a flickering teardrop, a candle flame becomes a ghostly blue sphere reliant on diffusion for its oxygen.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:2",
+    "text": "uoyancy and thus rising hot gases. Instead of a flickering teardrop, a candle flame becomes a ghostly blue sphere reliant on diffusion for its oxygen. NASA\u2019s spacecraft fire safety work is focused on prevention, detection, and suppression. Prevention is achieved by controlling ignition sources and through material selection, which depends on understanding flammability limits. To facilitate spacesuit use, an atmosphere with increased oxygen and reduced pressure compared to Earth\u2019s is expected within the planned Moon Base and pressurized rovers. Flammability is highly dependent on oxygen concentration, and air flow is also important in microgravity. Flammability studies focus on solid materials such as fabrics and plastics, as studied in the Burning and Suppression of Solids (BASS and BASS-II) and Spacecraft Fire Safety Demonstration (Saffire-I, -II, and -III) investigations.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:3",
+    "text": "tudied in the Burning and Suppression of Solids (BASS and BASS-II) and Spacecraft Fire Safety Demonstration (Saffire-I, -II, and -III) investigations. Fire detection was tested in microgravity through the Smoke and Aerosol Measurement Experiment studies (SAME and SAME-R). Suppression was studied in the Flame Extinguishment Experiment (FLEX) through dilution of the chamber atmosphere with carbon dioxide and helium, both of which suppress fire. Objectives Results from low-gravity combustion experiments, conducted for example on the International Space Station (ISS), are being made publicly available through NASA's Physical Science Informatics (PSI) database, but the amount of data can be overwhelming. It can be hard to find, harder to compare, and harder yet to interpret.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:4",
+    "text": "cience Informatics (PSI) database, but the amount of data can be overwhelming. It can be hard to find, harder to compare, and harder yet to interpret. Your challenge is to build an SI-powered, web-based dashboard that summarizes, ranks, and interprets combustion science investigations to deliver critical foundational insights for fire safety. You may consider enabling users to: - Identify investigations most relevant to the fire safety needs of habitable crew environments, including spacecraft, space stations, bases on the lunar and Martian surfaces, and pressurized rovers.* - Extract data that supports predictive modeling of flammability and fire scenarios in space exploration. - Highlight research that informs the development of next-generation fire safety controls and equipment.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:5",
+    "text": "lity and fire scenarios in space exploration. - Highlight research that informs the development of next-generation fire safety controls and equipment. In this challenge, you\u2019ll help turn complex data into clear answers and make the next giant leap a safer one. Your dashboard could also address potential applications of the PSI data to fire safety on Earth. Fine-water-mist extinguishers developed for use on the ISS have practical applications here on Earth, and NASA technology has similarly led to improvements in terrestrial smoke detection and firefighter gear, including protective clothing and air tanks. *Fire safety involving rockets and propellants is generally beyond the scope of the research available in the PSI database.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:6",
+    "text": "ve clothing and air tanks. *Fire safety involving rockets and propellants is generally beyond the scope of the research available in the PSI database. The high velocities within rocket engines render the combustion effectively independent of gravity \u2014 although a rocket\u2019s launch is of course strongly dependent on gravity. Potential Considerations You may (but are not required to) consider the following: - Your target audience can include professors, graduate students, undergraduate students, aerospace researchers, and aerospace engineers. - Consider how you might summarize and display attributes such as: - Experimental objectives - Fuels, including shape and size of the samples or burners - Other test conditions, such as oxygen concentration and airflow speed - Variables: how did tests from the same investigation differ and how were they the same? - Sensors or types of measurements - Cons",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:7",
+    "text": "and airflow speed - Variables: how did tests from the same investigation differ and how were they the same? - Sensors or types of measurements - Consider how to summarize and display similarities and differences between different investigations. - Other investigations in PSI - One of the instruments used for smoke detection in the SAME and SAME-R studies was instead used to detect dust in the Dust and Aerosol Measurement Feasibility Test (DAFT and DAFT-2) studies. - While it burned gaseous fuels, the Burning Rate Emulator (BRE) experiment of the Advanced Combustion via Microgravity Experiments (ACME) project was a study of materials flammability in still atmospheres as a function of material properties. - Other combustion investigations within the PSI database (but not explicitly referenced above) are still relevant to fire safety, just not as strongly or directly.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:8",
+    "text": "tion investigations within the PSI database (but not explicitly referenced above) are still relevant to fire safety, just not as strongly or directly. - Hardware - The six experiments in the ACME project featured flames of gaseous fuels and were all conducted with the same modular set of ACME hardware in the Combustion Integrated Rack (CIR). - FLEX, FLEX-2, and the Cool Flames Investigation (CFI) each featured burning droplets of liquid fuel and were conducted with the Multi-user Droplet Combustion Apparatus (MDCA) in the CIR. - BASS, BASS-II, the Smoke Point In Co-flow Experiment (SPICE), and the Structure & Liftoff In Combustion Experiment (SLICE) collectively featured both solid and gaseous fuels. Each of these investigations was conducted within the Microgravity Science Glovebox (MSG) using the modular fan-driven flow duct built for SPICE.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:9",
+    "text": "els. Each of these investigations was conducted within the Microgravity Science Glovebox (MSG) using the modular fan-driven flow duct built for SPICE. - Spacesuits and oxygen concentration - To enable flexibility, spacesuits are filled with 100% oxygen to only 4.3 psi (pounds per square inch), where the Earth\u2019s pressure at sea level is 14.7 psi. - To avoid the bends (decompression sickness), the astronauts pre-breathe 100% oxygen to expel absorbed nitrogen. - To reduce the pre-breathing duration and thus facilitate lunar excursions, it is expected that the Moon Base and pressurized rover(s) will be at a pressure and oxygen concentration between those in a spacesuit and the Earth\u2019s atmosphere. - The intermediate oxygen concentration used on the Moon will likely be 30% or greater, with a corresponding pressure of 10.2 psi or less.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:10",
+    "text": "atmosphere. - The intermediate oxygen concentration used on the Moon will likely be 30% or greater, with a corresponding pressure of 10.2 psi or less. Compared to Earth\u2019s atmosphere, that\u2019s more than a 40% increase in the oxygen concentration making materials much more flammable. - Microgravity tests with the highest oxygen concentrations were conducted as part of the ACME\u2019s Cool Flames Investigation with Gases (CFI-G). In those tests, the combustion chamber was filled with a mixture of nitrogen and a flammable gas (e.g., propane), while an oxygen-nitrogen mixture of up to 85% oxygen flowed from the spherical burner creating an inside-out flame. - Partial-gravity data - Although NASA is heavily focused on the return of astronauts to the Moon\u2019s surface and the establishment of a Moon Base in preparation for the future human exploration of Mars, there is currently no partial-gravity combus",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:11",
+    "text": "n\u2019s surface and the establishment of a Moon Base in preparation for the future human exploration of Mars, there is currently no partial-gravity combustion data available in PSI. We expect such data will be added in the future, for example from the Lunar-g Combustion Investigation (LUCI) and the Flammability of Materials on the Moon (FM2) experiment. - Partial gravity was mimicked in ACME\u2019s Electric-Field Effects on Laminar Diffusion Flames (E-FIELD Flames) experiment through the effect of the electric field on the ions that naturally occur in flames. - Microgravity and normal-gravity results could bound what occurs at intermediate gravity levels. https://youtu.be/AVuEiKxOpc0?si=YFkPlaDZz7CajMMF Response: I will now generate the interactive Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion web-based dashboard application in a single self-contained React compo",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:12",
+    "text": "Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion web-based dashboard application in a single self-contained React component file. I have created the Flame in Freefall: SI-Powered Fire Safety Insights from Microgravity Combustion interactive web application. Here is a summary of what is included: 1. Mission & Habitat Context Selector (1. Habitat & Ranking): Dynamically weights and ranks NASA's PSI combustion investigations across Lunar Base / Pressurized Rover ( , \u2014 over a 40% increase in oxygen vs. Earth to reduce spacesuit pre-breathing time for decompression sickness / \"the bends\"), ISS / LEO Spacecraft ( , , ), Deep Space / Artemis Transit, EVA Spacesuit ( , ), and Terrestrial Spin-offs. Includes an interactive Exploration Atmosphere vs.",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "kb:p1:13",
+    "text": "O Spacecraft ( , , ), Deep Space / Artemis Transit, EVA Spacesuit ( , ), and Terrestrial Spin-offs. Includes an interactive Exploration Atmosphere vs. PSI Coverage Scatter Plot highlighting the Lunar exploration parameter box alongside upcoming LUCI and FM2 experiments. 2. Comprehensive PSI Database & Explorer (2. PSI Database): \u2264 10.2\u00a0psi \u2265 30%\u00a0O 2 14.7\u00a0psi 21%\u00a0O 2 0g 4.3\u00a0psi 100%\u00a0O 2 11/11/26, 8:13 AM For decades, NASA has studied how flames and fire behave in microgravity, gathering a trove of exper https://gemini.google.com/app/26e2c4e4f88e70a0?hl=en-IN 1/36",
+    "source": "NASA PSI brief / PSI investigation overview",
+    "page": 1,
+    "kind": "pdf"
+  },
+  {
+    "id": "inv:BASS",
+    "text": "BASS - Burning and Suppression of Solids. First ISS study of how solid fuels burn and are extinguished without buoyancy. Pillars: prevention, suppression. Facility: Microgravity Science Glovebox (MSG); hardware: SPICE modular fan-driven flow duct. Phase: solid; fuels: PMMA (acrylic) rod, fabric blends, paper; gravity: 0.0 g. Test conditions: quiescent cabin air at 21% O2, 14.7 psi, 0 cm/s (nominal); low forced flow at 21% O2, 14.7 psi, 5 cm/s (nominal); moderate forced flow at 21% O2, 14.7 psi, 15 cm/s (nominal). Measurements: flame spread rate, extinction limit, burn duration, flame appearance. Finding: In microgravity a quiescent solid flame tends to self-extinguish from oxygen starvation, but a very low forced flow re-supplies oxygen and sustains burning. Airflow, not buoyancy, sets the flammability limit. Partial-gravity relevance: Defines the 0g anchor for solid fuels. Because buoyant velocity scales with sqrt(g), the forced-flow value at which spread peaks is the quantity that must be re-mapped for lunar gravity. Earth spin-off: Cabin material screening for spacecraft and aircraft, and the airflow limits in terrestrial flammability test standards.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:BASS-II",
+    "text": "BASS-II - Burning and Suppression of Solids - II. Extended solid-fuel flammability matrix: thicker fuels, wider flow range, extinction boundaries. Pillars: prevention, suppression. Facility: Microgravity Science Glovebox (MSG); hardware: SPICE modular fan-driven flow duct. Phase: solid; fuels: PMMA (acrylic) rod, fiberglass blends, cotton blends; gravity: 0.0 g. Test conditions: low flow, ambient air at 21% O2, 14.7 psi, 5 cm/s (nominal); mid flow, ambient air at 21% O2, 14.7 psi, 10 cm/s (nominal); elevated flow, ambient air at 21% O2, 14.7 psi, 20 cm/s (nominal). Measurements: flame spread rate, extinction velocity, fuel temperature, soot deposition. Finding: Spread rate is non-monotonic in airflow: it rises as flow supplies oxygen, peaks at a low characteristic velocity, then falls as convective cooling and blow-off dominate. That peak velocity is the single most gravity-sensitive parameter in the dataset. Partial-gravity relevance: Provides the flow-response shape used to model intermediate gravity. Lunar gravity shifts the buoyant contribution but leaves the forced-flow term unchanged. Earth spin-off: Fire-retardant textile qualification and warehouse airflow design.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SPICE",
+    "text": "SPICE - Smoke Point In Co-flow Experiment. Soot formation and smoke point of gaseous co-flow diffusion flames. Pillars: prevention. Facility: Microgravity Science Glovebox (MSG); hardware: SPICE modular fan-driven flow duct. Phase: gas; fuels: ethylene, methane, propane; gravity: 0.0 g. Test conditions: co-flow, low velocity at 21% O2, 14.7 psi, 10 cm/s (nominal); co-flow, high velocity at 21% O2, 14.7 psi, 20 cm/s (nominal). Measurements: smoke point, soot volume fraction, flame temperature, radiative loss. Finding: Microgravity co-flow flames reach a longer smoke point than 1g flames at the same fuel velocity, so soot and radiative heat transfer are under-predicted by Earth correlations. Partial-gravity relevance: Soot yield drives radiative heat flux to nearby surfaces, which is the dominant spread mechanism in a closed habitat at elevated oxygen. Earth spin-off: Soot-free combustor and jet engine design; diesel particulate reduction.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SLICE",
+    "text": "SLICE - Structure and Liftoff In Combustion Experiment. Flame structure, stability and liftoff of gaseous jet flames in co-flow. Pillars: prevention. Facility: Microgravity Science Glovebox (MSG); hardware: SPICE modular fan-driven flow duct. Phase: gas; fuels: methane, propane, ethylene; gravity: 0.0 g. Test conditions: attached flame at 21% O2, 14.7 psi, 8 cm/s (nominal); lifted flame at 21% O2, 14.7 psi, 25 cm/s (nominal). Measurements: flame liftoff height, flame length, stability limit, OH chemiluminescence. Finding: Liftoff and blow-off limits in microgravity follow the same co-flow scaling as 1g once buoyancy is removed, which makes SLICE the cleanest dataset for isolating the forced-flow term. Partial-gravity relevance: Because liftoff is a pure flow-structure phenomenon, it transfers to partial gravity with minimal correction - useful as a control against buoyancy-driven effects. Earth spin-off: Burner and flare stability design, low-NOx industrial combustion.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SAFFIRE-I",
+    "text": "SAFFIRE-I - Spacecraft Fire Safety Demonstration - I. First large-scale spacecraft fire in an uncrewed Cygnus cargo vehicle. Pillars: prevention, detection. Facility: Cygnus cargo vehicle (free-flying); hardware: Large avionics bay test enclosure. Phase: solid; fuels: SIBAL fabric (cotton/fiberglass); gravity: 0.0 g. Test conditions: low pressure, elevated O2 at 34.5% O2, 2.98 psi, 20 cm/s (nominal). Measurements: flame spread rate, peak pressure rise, combustion product yield, smoke particle size. Finding: A large-scale microgravity fire in low-pressure, elevated-oxygen air spreads at a scale where material selection dominates the outcome; the SIBAL fabric was chosen because it self-extinguishes at 1g but the test quantified how far that guarantee survives in low pressure. Partial-gravity relevance: The only dataset at habitat-relevant size. Saffire's low pressure / high oxygen atmosphere is the closest existing analogue to the planned lunar habitat, but at 0g. Earth spin-off: Fire limits for high-oxygen hospital, submarine and aircraft environments.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SAFFIRE-II",
+    "text": "SAFFIRE-II - Spacecraft Fire Safety Demonstration - II. Nine material samples burned at large scale in microgravity. Pillars: prevention. Facility: Cygnus cargo vehicle (free-flying); hardware: Large avionics bay test enclosure. Phase: solid; fuels: SIBAL fabric, Nomex, Kapton, cotton/fiberglass blends, PMMA; gravity: 0.0 g. Test conditions: low pressure, elevated O2 at 34.5% O2, 2.98 psi, 20 cm/s (nominal). Measurements: flame spread rate, material ranking, smoke detector response, residue mass. Finding: Material ranking in microgravity is not the same as the 1g ranking: samples that pass a 1g flammability screen can burn appreciably faster at low pressure and high oxygen. Partial-gravity relevance: Gives a per-material ordering at 0g that can be compared against the 1g ordering - the comparison itself is a usable bound on what a lunar habitat will do. Earth spin-off: Material qualification test methods for aerospace and rail interiors.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SAFFIRE-III",
+    "text": "SAFFIRE-III - Spacecraft Fire Safety Demonstration - III. Largest microgravity fire to date; Saffire-III flew after the vehicle departed the ISS. Pillars: prevention, detection. Facility: Cygnus cargo vehicle (free-flying); hardware: Large avionics bay test enclosure. Phase: solid; fuels: SIBAL fabric, mixed spacecraft materials; gravity: 0.0 g. Test conditions: low pressure, elevated O2 at 34.5% O2, 2.98 psi, 20 cm/s (nominal). Measurements: flame spread rate, downstream smoke transport, detector time-to-alarm, species concentrations. Finding: Saffire-III coupled a burning sample to a downstream smoke transport path, so it measures detection latency as well as spread - the first dataset that closes the prevention-to-detection loop at scale. Partial-gravity relevance: Detection latency depends on particle agglomeration, which is gravity-sensitive; the 0g alarm times are a lower bound on what a lunar habitat should expect. Earth spin-off: Early-warning smoke detection in large enclosed volumes.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SAME",
+    "text": "SAME - Smoke and Aerosol Measurement Experiment. How microgravity changes smoke particle size, and what that does to detectors. Pillars: detection. Facility: Microgravity Science Glovebox (MSG); hardware: Aerosol smoke duct with commercial detector heads. Phase: solid; fuels: Kapton, silicone, cotton, Teflon; gravity: 0.0 g. Test conditions: smouldering smoke source at 21% O2, 14.7 psi, 5 cm/s (nominal); flaming smoke source at 21% O2, 14.7 psi, 5 cm/s (nominal). Measurements: particle size distribution, detector alarm threshold, agglomeration rate, optical density. Finding: Without buoyancy, smoke particles stay in the hot zone longer and agglomerate into larger particles, shifting the size distribution away from the range terrestrial detectors are tuned for. Partial-gravity relevance: Particle residence time is set by the flow field, so detector response at 0.16g should sit between the 0g and 1g distributions rather than equal either. Earth spin-off: Multi-criteria nuisance-free smoke detectors for homes and industry.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:SAME-R",
+    "text": "SAME-R - Smoke and Aerosol Measurement Experiment - Reflight. Reflight of SAME with improved instrumentation and more fuel types. Pillars: detection. Facility: Microgravity Science Glovebox (MSG); hardware: Aerosol smoke duct with commercial detector heads. Phase: solid; fuels: Kapton, silicone, cotton, Teflon, Nomex; gravity: 0.0 g. Test conditions: low flow, smouldering at 21% O2, 14.7 psi, 3 cm/s (nominal); low flow, flaming at 21% O2, 14.7 psi, 8 cm/s (nominal). Measurements: particle size distribution, detector alarm threshold, agglomeration rate. Finding: SAME-R confirmed the SAME result across more fuels and quantified how much of the size shift is due to residence time rather than fuel chemistry. Partial-gravity relevance: Two flights of the same instrument give a repeatability estimate, which is what a detector design for a lunar habitat actually needs. Earth spin-off: Detector calibration standards for low-airflow spaces.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:DAFT",
+    "text": "DAFT - Dust and Aerosol Measurement Feasibility Test. A smoke instrument repurposed to measure cabin and lunar dust. Pillars: detection. Facility: Microgravity Science Glovebox (MSG); hardware: SAME aerosol instrument, repurposed. Phase: solid; fuels: lunar regolith simulant, cabin dust; gravity: 0.0 g. Test conditions: dust aerosol, low flow at 21% O2, 14.7 psi, 5 cm/s (nominal). Measurements: particle size distribution, number concentration, instrument false-alarm rate. Finding: The same optical instrument that detects smoke also detects dust, which means a detector on the Moon must discriminate nuisance dust from fire signatures - a false-alarm problem created by the environment, not the sensor. Partial-gravity relevance: Dust settling differs sharply between 0g and lunar gravity, so DAFT's 0g false-alarm rate is a pessimistic bound for a lunar habitat. Earth spin-off: Industrial warehouse and firefighter dust/smoke sensing.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:DAFT-2",
+    "text": "DAFT-2 - Dust and Aerosol Measurement Feasibility Test - 2. Extended dust measurement with more simulants and concentrations. Pillars: detection. Facility: Microgravity Science Glovebox (MSG); hardware: SAME aerosol instrument, repurposed. Phase: solid; fuels: lunar regolith simulant, Martian simulant, cabin dust; gravity: 0.0 g. Test conditions: dust aerosol, high concentration at 21% O2, 14.7 psi, 5 cm/s (nominal). Measurements: particle size distribution, number concentration, instrument false-alarm rate. Finding: DAFT-2 bounded the concentration range over which a smoke detector can be trusted in a dusty cabin, which is directly a design input for lunar surface habitats. Partial-gravity relevance: Same instrument, wider envelope: gives the sensitivity floor a lunar detector must beat. Earth spin-off: Nuisance-alarm reduction in mining and grain handling.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:FLEX",
+    "text": "FLEX - Flame Extinguishment Experiment. Liquid fuel droplet burning and extinguishment by CO2 and helium dilution. Pillars: suppression. Facility: Combustion Integrated Rack (CIR); hardware: Multi-user Droplet Combustion Apparatus (MDCA). Phase: liquid; fuels: heptane, methanol, decane; gravity: 0.0 g. Test conditions: air, no diluent at 21% O2, 14.7 psi, 0 cm/s (nominal); CO2-diluted at 18% O2, 14.7 psi, 0 cm/s (nominal); helium-diluted at 18% O2, 14.7 psi, 0 cm/s (nominal). Measurements: burn rate constant, extinction diameter, radiative fraction, soot volume fraction. Finding: Droplet flames extinguish at a well-defined diameter in microgravity, and CO2 suppresses far more effectively than helium at the same dilution because of its heat capacity rather than its oxygen displacement. Partial-gravity relevance: Suppression agent effectiveness is chemistry, not gravity, so FLEX's ranking of CO2 over helium transfers to lunar gravity with little correction - unlike the spread-rate data. Earth spin-off: Fine-water-mist extinguishers, clean-agent selection, cool-flame engine concepts.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:FLEX-2",
+    "text": "FLEX-2 - Flame Extinguishment Experiment - 2. Soot, radiative loss and near-limit droplet burning across fuels and pressures. Pillars: suppression, prevention. Facility: Combustion Integrated Rack (CIR); hardware: Multi-user Droplet Combustion Apparatus (MDCA). Phase: liquid; fuels: heptane, methanol, ethanol, iso-octane; gravity: 0.0 g. Test conditions: low pressure at 21% O2, 7.35 psi, 0 cm/s (nominal); ambient pressure at 21% O2, 14.7 psi, 0 cm/s (nominal); elevated pressure at 21% O2, 29.4 psi, 0 cm/s (nominal). Measurements: burn rate constant, soot volume fraction, radiative heat loss, extinction diameter. Finding: Radiative loss becomes the dominant sink near the flammability limit in microgravity, so a flame can extinguish purely by radiating heat away - a mechanism with no 1g counterpart at the same scale. Partial-gravity relevance: Radiative extinction is scale-dependent rather than gravity-dependent, which makes FLEX-2 the most transferable dataset for lunar habitats at large sample size. Earth spin-off: Soot models for gas turbines and fire-suppression agent sizing.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:CFI",
+    "text": "CFI - Cool Flames Investigation. Low-temperature 'cool flame' burning of droplets, invisible to the eye. Pillars: prevention, detection. Facility: Combustion Integrated Rack (CIR); hardware: Multi-user Droplet Combustion Apparatus (MDCA). Phase: liquid; fuels: heptane, methanol, decane; gravity: 0.0 g. Test conditions: low oxygen, near-limit at 15% O2, 14.7 psi, 0 cm/s (nominal). Measurements: cool-flame duration, radical concentration, droplet diameter history, formaldehyde yield. Finding: Cool flames burn at temperatures far below visible ignition and can persist for many seconds, producing formaldehyde and carbon monoxide without a visible flame - a detection hazard in a crewed cabin. Partial-gravity relevance: Cool-flame chemistry is gravity-independent; only the transport that sustains it changes. Expect the same low-temperature hazard at lunar gravity. Earth spin-off: Low-temperature combustion engines, formaldehyde emission control.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:ACME-CFI-G",
+    "text": "ACME-CFI-G - ACME Cool Flames Investigation with Gases. Gaseous cool flames, including inside-out spherical flames at up to 85% oxygen. Pillars: prevention. Facility: Combustion Integrated Rack (CIR); hardware: ACME modular insert (spherical burner). Phase: gas; fuels: propane, methane, nitrogen-diluted mixtures; gravity: 0.0 g. Test conditions: inside-out flame, 85% O2 at 85% O2, 14.7 psi, 5 cm/s (brief); inside-out flame, 50% O2 at 50% O2, 14.7 psi, 5 cm/s (nominal); inside-out flame, 30% O2 at 30% O2, 14.7 psi, 5 cm/s (nominal). Measurements: cool-flame duration, flame temperature, species concentration, radical pool. Finding: The highest-oxygen microgravity combustion tests in PSI: an oxygen-nitrogen mixture of up to 85% oxygen flows outward from a spherical burner into a propane-filled chamber, inverting the usual flame geometry so the oxidizer arrives from inside. Partial-gravity relevance: This is the only PSI dataset that brackets the oxygen concentration a lunar habitat may actually use, so it anchors the high-oxygen end of any habitat risk assessment. Earth spin-off: High-efficiency low-temperature combustion, oxygen-enriched industrial burners.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:ACME-BRE",
+    "text": "ACME-BRE - ACME Burning Rate Emulator. A gas flame that behaves like a burning solid, in still atmospheres. Pillars: prevention. Facility: Combustion Integrated Rack (CIR); hardware: ACME modular insert (porous burner). Phase: gas; fuels: gaseous simulant of a solid fuel; gravity: 0.0 g. Test conditions: still atmosphere, ambient O2 at 21% O2, 14.7 psi, 0 cm/s (nominal); still atmosphere, elevated O2 at 30% O2, 10.2 psi, 0 cm/s (nominal). Measurements: burning rate, heat flux to surface, flame standoff distance. Finding: Burning a gaseous simulant through a porous burner reproduces the heat-feedback of a solid fuel while letting material properties be varied independently - the only way to isolate which material property sets flammability in a still atmosphere. Partial-gravity relevance: Because BRE is a still-atmosphere test, buoyancy is the only transport mechanism, so it is the most gravity-sensitive investigation in PSI and the most important to repeat at partial gravity. Earth spin-off: Material flammability screening without destructive testing.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:ACME-E-FIELD",
+    "text": "ACME-E-FIELD - ACME Electric-Field Effects on Laminar Diffusion Flames. Electric fields acting on flame ions to mimic partial gravity. Pillars: prevention. Facility: Combustion Integrated Rack (CIR); hardware: ACME modular insert (high-voltage mesh). Phase: gas; fuels: methane, propane co-flow; gravity: 0.0 g. Test conditions: no field at 21% O2, 14.7 psi, 8.4 cm/s (nominal); moderate field at 21% O2, 14.7 psi, 8.4 cm/s (nominal); high field at 21% O2, 14.7 psi, 8.4 cm/s (nominal). Measurements: ion wind velocity, flame shape, soot emission, flame extinction limit. Finding: An applied electric field drags flame ions and induces an ion wind that reshapes the flame the way buoyancy would, so partial gravity was mimicked without ever leaving 0g. Partial-gravity relevance: This is the closest thing to partial-gravity data in PSI, and it is still not partial-gravity data: it reproduces the flow effect of buoyancy, not the hydrostatic and heat-transfer effects. Earth spin-off: Electrically controlled low-emission industrial burners; soot suppression.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "inv:ACME-PROGRAM",
+    "text": "ACME-PROGRAM - ACME project (six experiments, shared hardware). Advanced Combustion via Microgravity Experiments: six gaseous-fuel studies on one modular rack insert set. Pillars: prevention. Facility: Combustion Integrated Rack (CIR); hardware: ACME modular insert set (shared across all six). Phase: gas; fuels: methane, propane, ethylene, gaseous simulants; gravity: 0.0 g. Test conditions: shared rack baseline at 21% O2, 14.7 psi, 5 cm/s (brief). Measurements: flame shape, soot, extinction limits, burning rate. Finding: All six ACME experiments used the same modular hardware in the CIR, so their results are directly comparable in a way that results from different racks are not - hardware is a hidden confounder in cross-investigation comparison. Partial-gravity relevance: Comparability across ACME runs is the template for how a lunar campaign should be designed: hold hardware fixed, vary gravity. Earth spin-off: Modular test-rig design for industrial burner qualification.",
+    "source": "PSI seed catalogue",
+    "page": null,
+    "kind": "dataset"
+  },
+  {
+    "id": "kb:incident:apollo13",
+    "text": "Apollo 13 Oxygen Tank Explosion (1970-04-13): During translunar coast, cryogenic supercritical oxygen tank 2 in the Service Module suffered catastrophic combustion. Thermostatic switches, upgraded to 65V DC ground power but not re-engineered, welded shut during ground detanking, baking the interior above 1,000 deg F and stripping Teflon (PTFE) wire insulation. When the crew initiated a cryo-stir fan in flight, an electrical arc ignited the Teflon in 100% supercritical oxygen at ~1,000 psia. The rapid pressure escalation blew out the Sector 4 outer panel and crippled Service Module oxygen, power, and water, forcing the crew to use the Lunar Module Aquarius as a lifeboat. Redesigns: complete removal of stir fans and electric motors from cryo tanks, stainless steel conduit sheathing, independent thermal cutoffs, addition of a third isolated O2 tank, and strict high-pressure oxygen materials flammability screening (NASA-STD-6001 Test 17).",
+    "source": "NASA SMA Apollo 13 Case Study & Accident Review Board Report",
+    "page": 1,
+    "kind": "incident"
+  },
+  {
+    "id": "kb:incident:apollo1",
+    "text": "Apollo 1 Launch Pad Fire (1967-01-27, AS-204): During a pre-launch countdown test at Cape Kennedy Pad 34, a cabin fire ignited in Command Module 012. The cabin was pressurized to 16.7 psia (115 kPa) with 100% pure oxygen. An electrical arc from chafed Teflon insulation near the Environmental Control Unit ignited flammable materials, including over 34 square feet of Velcro hook-and-loop fasteners, nylon cargo netting, and polyurethane foam cushions. In pure high-pressure oxygen, materials burn with violent speed; cabin pressure spiked to 29-37 psia in 17 seconds, rupturing the inner pressure vessel. The inward-opening hatch required 90 seconds to unlatch, trapping astronauts Virgil Grissom, Edward White, and Roger Chaffee, who died of carbon monoxide asphyxiation. Redesigns: outward-opening quick-release hatch (7-second egress), mixed launch atmosphere (60% N2 / 40% O2 transitioning to 100% O2 at 5 psia in orbit), elimination of flammable nylon and Velcro, replacement with non-flammable Beta cloth and Polybenzimidazole (PBI) fabrics, and establishment of NASA-STD-6001 flammability testing.",
+    "source": "NASA SMA Apollo 1 Memorial & Accident Investigation Board Report",
+    "page": 1,
+    "kind": "incident"
+  },
+  {
+    "id": "kb:incident:mir1997",
+    "text": "Mir Space Station Fire (1997-02-23): While operating in Low Earth Orbit aboard the Russian space station Mir, a Solid Fuel Oxygen Generator (SFOG, Vika / TGK canister containing lithium perchlorate) suffered a mechanical breach. Upon ignition, molten lithium metal and burning fuel broke through the steel canister, torching like an open blowtorch against the Kvant-1 module aluminum hull. In microgravity (0g), the absence of thermal buoyancy prevented smoke from rising or stratifying; toxic smoke and carbon monoxide filled the module from ceiling to floor, plunging crew into near-zero visibility. Extinguishing foam dispersed into floating spheres rather than blanketing the flame. The 6-person crew fought the fire for 14 minutes using multiple foam extinguishers while wearing industrial breathing masks. The fire blocked access to one of two docked Soyuz escape vehicles. Redesigns: isolation compartments for oxygen generators, unobstructed egress pathways to escape vehicles, enhanced smoke masks with CO catalysis, and specialized microgravity foam suppression techniques.",
+    "source": "NASA History 25 Years Ago: Fire Aboard Space Station Mir",
+    "page": 1,
+    "kind": "incident"
+  },
+  {
+    "id": "kb:spinoff:airtanks",
+    "text": "Firefighter Lightweight Air Tanks & SCBA (NASA Spinoff Node 9582): NASA Johnson Space Center, in collaboration with Scott Aviation and the National Bureau of Standards, adapted the composite pressure vessel technology originally developed for Apollo and Skylab Portable Life Support System (PLSS) astronaut backpacks. Heavy, unwieldy 33-lb forged steel air tanks were replaced with seamless aluminum liners overwrapped with high-strength resin-impregnated fiberglass and Kevlar composites, operating at 4,500 psi. This cut cylinder weight by 40% to 50% down to 20 lbs for a 30-minute air supply, dramatically reducing firefighter cardiac strain, exhaustion, and injuries, standardizing modern municipal Self-Contained Breathing Apparatus (SCBA) worldwide.",
+    "source": "NASA Spinoff 1976 / Node 9582",
+    "page": 1,
+    "kind": "spinoff"
+  },
+  {
+    "id": "kb:spinoff:firedetector",
+    "text": "Space Shuttle Discriminating Incipient Fire Detector (NASA Spinoff Node 9407): Developed by Brunswick for the Space Shuttle orbiter cabin, this advanced particulate sensor samples ambient air to detect combustion aerosols. Unlike conventional home smoke detectors that trigger false alarms on non-hazardous dust or airborne moisture, the Shuttle detector discriminates between true sub-micron combustion particles and extraneous matter like dust motes. It detects incipient fire conditions before visible flame or heavy smoke appears. This technology was spun off into industrial fire safety systems, protecting hazardous underground coal mines, metallurgical mills, and server cleanrooms.",
+    "source": "NASA Spinoff 1978 / Node 9407",
+    "page": 1,
+    "kind": "spinoff"
+  },
+  {
+    "id": "kb:spinoff:fireattire",
+    "text": "Project FIRES & Advanced Firefighter Turnout Attire (NASA Spinoff Node 9918): Sponsored jointly by NASA Marshall Space Flight Center and FEMA's U.S. Fire Administration, Project FIRES (Firefighter's Integrated Response Equipment System) adapted Apollo astronaut spacesuit materials and thermal protection systems for civilian firefighters. Central to the program was Polybenzimidazole (PBI) synthetic fiber, commercialized with Celanese following the Apollo 1 post-fire materials initiative. PBI does not ignite, melt, or drip in air even at temperatures exceeding 1,000 deg F (540 deg C). Today, PBI/Kevlar blend fabrics serve as the gold-standard outer shell for structural firefighter turnout coats and trousers globally.",
+    "source": "NASA Spinoff 1982 / Node 9918",
+    "page": 1,
+    "kind": "spinoff"
+  },
+  {
+    "id": "kb:ranking:formula",
+    "text": "Habitat Flammability Evidence Ranking Formula: S = sum_{i=1}^5 w_i * r_i. The multi-axis composite relevance score S is calculated as the weighted sum of normalized dimensional match ratings r_i across the 5 primary environmental and operational axes: 1) Gravity regime r_g (microgravity 0g vs partial g vs 1g), 2) Oxygen concentration r_O2 (hypoxic vs ambient 21% vs elevated 34% EVA), 3) Atmospheric pressure r_P (14.7 psia sea level down to 8.2 psia exploration atmosphere), 4) Ventilation airflow velocity r_u (quiescent 0 cm/s vs low flow 5-20 cm/s), and 5) Material fuel phase r_mat (solid polymers, textiles, droplets, or gases). Each weight w_i allows mission engineers to emphasize the operational constraints of their specific spacecraft or lunar habitat architecture.",
+    "source": "NASA Space App FLIRA Scoring Specification",
+    "page": 1,
+    "kind": "theory"
+  }
+]

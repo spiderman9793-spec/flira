@@ -1,0 +1,1374 @@
+{
+  "schema_version": "1.1",
+  "note": "Seed catalogue of NASA PSI combustion investigations. Every numeric test condition carries an explicit 'basis'. 'brief' = stated in the NASA PSI challenge brief. 'nominal' = representative of the investigation's published design conditions, not a per-run PSI record. 'illustrative' = placeholder used only to exercise the UI; never ranked or used as an empirical anchor. Quantitative outcomes are deliberately absent unless a basis is given, because fabricated spread rates are the one thing a fire-safety tool must never do.",
+  "investigations": [
+    {
+      "id": "BASS",
+      "name": "Burning and Suppression of Solids",
+      "short": "First ISS study of how solid fuels burn and are extinguished without buoyancy.",
+      "pillars": [
+        "prevention",
+        "suppression"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "PMMA (acrylic) rod",
+        "fabric blends",
+        "paper"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "quiescent cabin air",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "low forced flow",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "moderate forced flow",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 15.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "Artemis EVA exploration atmosphere",
+          "o2_pct": 34.0,
+          "pressure_psi": 8.2,
+          "flow_cm_s": 10.0,
+          "basis": "nominal",
+          "atmosphere_category": "Exploration EVA (8.2 psia, 34% O2)",
+          "notes": "NASA Exploration Atmosphere for Artemis/Lunar lander pre-breathe mitigation."
+        },
+        {
+          "label": "Lunar surface analog (0.166g predicted)",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 10.0,
+          "gravity_g": 0.166,
+          "basis": "nominal",
+          "atmosphere_category": "Lunar Surface Habitat Analog",
+          "notes": "CFD/drop-tower analog condition for PMMA rod under Moon gravity."
+        }
+      ],
+      "measurements": [
+        "flame spread rate",
+        "extinction limit",
+        "burn duration",
+        "flame appearance"
+      ],
+      "finding": "In microgravity a quiescent solid flame tends to self-extinguish from oxygen starvation, but a very low forced flow re-supplies oxygen and sustains burning. Airflow, not buoyancy, sets the flammability limit.",
+      "finding_basis": "published",
+      "partial_g_note": "Defines the 0g anchor for solid fuels. Because buoyant velocity scales with sqrt(g), the forced-flow value at which spread peaks is the quantity that must be re-mapped for lunar gravity.",
+      "earth_spinoff": "Cabin material screening for spacecraft and aircraft, and the airflow limits in terrestrial flammability test standards.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "BASS-II",
+      "name": "Burning and Suppression of Solids - II",
+      "short": "Extended solid-fuel flammability matrix: thicker fuels, wider flow range, extinction boundaries.",
+      "pillars": [
+        "prevention",
+        "suppression"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "PMMA (acrylic) rod",
+        "fiberglass blends",
+        "cotton blends"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low flow, ambient air",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "mid flow, ambient air",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 10.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "elevated flow, ambient air",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 20.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "Hypoxic cabin extinction limit",
+          "o2_pct": 14.8,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "published",
+          "atmosphere_category": "Hypoxic / Extinction Testing",
+          "notes": "Near-extinction limit under microgravity forced airflow."
+        },
+        {
+          "label": "Artemis EVA pre-breathe PMMA ignition boundary",
+          "o2_pct": 34.0,
+          "pressure_psi": 8.2,
+          "flow_cm_s": 15.0,
+          "basis": "nominal",
+          "atmosphere_category": "Exploration EVA (8.2 psia, 34% O2)",
+          "notes": "Evaluate whether reduced pressure balances oxygen enrichment for solid plastics."
+        }
+      ],
+      "measurements": [
+        "flame spread rate",
+        "extinction velocity",
+        "fuel temperature",
+        "soot deposition"
+      ],
+      "finding": "Spread rate is non-monotonic in airflow: it rises as flow supplies oxygen, peaks at a low characteristic velocity, then falls as convective cooling and blow-off dominate. That peak velocity is the single most gravity-sensitive parameter in the dataset.",
+      "finding_basis": "published",
+      "partial_g_note": "Provides the flow-response shape used to model intermediate gravity. Lunar gravity shifts the buoyant contribution but leaves the forced-flow term unchanged.",
+      "earth_spinoff": "Fire-retardant textile qualification and warehouse airflow design.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SPICE",
+      "name": "Smoke Point In Co-flow Experiment",
+      "short": "Soot formation and smoke point of gaseous co-flow diffusion flames.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "ethylene",
+        "methane",
+        "propane"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "co-flow, low velocity",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 10.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "co-flow, high velocity",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 20.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "smoke point",
+        "soot volume fraction",
+        "flame temperature",
+        "radiative loss"
+      ],
+      "finding": "Microgravity co-flow flames reach a longer smoke point than 1g flames at the same fuel velocity, so soot and radiative heat transfer are under-predicted by Earth correlations.",
+      "finding_basis": "published",
+      "partial_g_note": "Soot yield drives radiative heat flux to nearby surfaces, which is the dominant spread mechanism in a closed habitat at elevated oxygen.",
+      "earth_spinoff": "Soot-free combustor and jet engine design; diesel particulate reduction.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SLICE",
+      "name": "Structure and Liftoff In Combustion Experiment",
+      "short": "Flame structure, stability and liftoff of gaseous jet flames in co-flow.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "methane",
+        "propane",
+        "ethylene"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "attached flame",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 8.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "lifted flame",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 25.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame liftoff height",
+        "flame length",
+        "stability limit",
+        "OH chemiluminescence"
+      ],
+      "finding": "Liftoff and blow-off limits in microgravity follow the same co-flow scaling as 1g once buoyancy is removed, which makes SLICE the cleanest dataset for isolating the forced-flow term.",
+      "finding_basis": "published",
+      "partial_g_note": "Because liftoff is a pure flow-structure phenomenon, it transfers to partial gravity with minimal correction - useful as a control against buoyancy-driven effects.",
+      "earth_spinoff": "Burner and flare stability design, low-NOx industrial combustion.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SAFFIRE-I",
+      "name": "Spacecraft Fire Safety Demonstration - I",
+      "short": "First large-scale spacecraft fire in an uncrewed Cygnus cargo vehicle.",
+      "pillars": [
+        "prevention",
+        "detection"
+      ],
+      "facility": "Cygnus cargo vehicle (free-flying)",
+      "hardware": "Large avionics bay test enclosure",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "SIBAL fabric (cotton/fiberglass)"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low pressure, elevated O2",
+          "o2_pct": 34.5,
+          "pressure_psi": 2.98,
+          "flow_cm_s": 20.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame spread rate",
+        "peak pressure rise",
+        "combustion product yield",
+        "smoke particle size"
+      ],
+      "finding": "A large-scale microgravity fire in low-pressure, elevated-oxygen air spreads at a scale where material selection dominates the outcome; the SIBAL fabric was chosen because it self-extinguishes at 1g but the test quantified how far that guarantee survives in low pressure.",
+      "finding_basis": "published",
+      "partial_g_note": "The only dataset at habitat-relevant size. Saffire's low pressure / high oxygen atmosphere is the closest existing analogue to the planned lunar habitat, but at 0g.",
+      "earth_spinoff": "Fire limits for high-oxygen hospital, submarine and aircraft environments.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SAFFIRE-II",
+      "name": "Spacecraft Fire Safety Demonstration - II",
+      "short": "Nine material samples burned at large scale in microgravity.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Cygnus cargo vehicle (free-flying)",
+      "hardware": "Large avionics bay test enclosure",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "SIBAL fabric",
+        "Nomex",
+        "Kapton",
+        "cotton/fiberglass blends",
+        "PMMA"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low pressure, elevated O2",
+          "o2_pct": 34.5,
+          "pressure_psi": 2.98,
+          "flow_cm_s": 20.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame spread rate",
+        "material ranking",
+        "smoke detector response",
+        "residue mass"
+      ],
+      "finding": "Material ranking in microgravity is not the same as the 1g ranking: samples that pass a 1g flammability screen can burn appreciably faster at low pressure and high oxygen.",
+      "finding_basis": "published",
+      "partial_g_note": "Gives a per-material ordering at 0g that can be compared against the 1g ordering - the comparison itself is a usable bound on what a lunar habitat will do.",
+      "earth_spinoff": "Material qualification test methods for aerospace and rail interiors.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SAFFIRE-III",
+      "name": "Spacecraft Fire Safety Demonstration - III",
+      "short": "Largest microgravity fire to date; Saffire-III flew after the vehicle departed the ISS.",
+      "pillars": [
+        "prevention",
+        "detection"
+      ],
+      "facility": "Cygnus cargo vehicle (free-flying)",
+      "hardware": "Large avionics bay test enclosure",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "SIBAL fabric",
+        "mixed spacecraft materials"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low pressure, elevated O2",
+          "o2_pct": 34.5,
+          "pressure_psi": 2.98,
+          "flow_cm_s": 20.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame spread rate",
+        "downstream smoke transport",
+        "detector time-to-alarm",
+        "species concentrations"
+      ],
+      "finding": "Saffire-III coupled a burning sample to a downstream smoke transport path, so it measures detection latency as well as spread - the first dataset that closes the prevention-to-detection loop at scale.",
+      "finding_basis": "published",
+      "partial_g_note": "Detection latency depends on particle agglomeration, which is gravity-sensitive; the 0g alarm times are a lower bound on what a lunar habitat should expect.",
+      "earth_spinoff": "Early-warning smoke detection in large enclosed volumes.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SAME",
+      "name": "Smoke and Aerosol Measurement Experiment",
+      "short": "How microgravity changes smoke particle size, and what that does to detectors.",
+      "pillars": [
+        "detection"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "Aerosol smoke duct with commercial detector heads",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "Kapton",
+        "silicone",
+        "cotton",
+        "Teflon"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "smouldering smoke source",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "flaming smoke source",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "particle size distribution",
+        "detector alarm threshold",
+        "agglomeration rate",
+        "optical density"
+      ],
+      "finding": "Without buoyancy, smoke particles stay in the hot zone longer and agglomerate into larger particles, shifting the size distribution away from the range terrestrial detectors are tuned for.",
+      "finding_basis": "published",
+      "partial_g_note": "Particle residence time is set by the flow field, so detector response at 0.16g should sit between the 0g and 1g distributions rather than equal either.",
+      "earth_spinoff": "Multi-criteria nuisance-free smoke detectors for homes and industry.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "SAME-R",
+      "name": "Smoke and Aerosol Measurement Experiment - Reflight",
+      "short": "Reflight of SAME with improved instrumentation and more fuel types.",
+      "pillars": [
+        "detection"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "Aerosol smoke duct with commercial detector heads",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "Kapton",
+        "silicone",
+        "cotton",
+        "Teflon",
+        "Nomex"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low flow, smouldering",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 3.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "low flow, flaming",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 8.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "particle size distribution",
+        "detector alarm threshold",
+        "agglomeration rate"
+      ],
+      "finding": "SAME-R confirmed the SAME result across more fuels and quantified how much of the size shift is due to residence time rather than fuel chemistry.",
+      "finding_basis": "published",
+      "partial_g_note": "Two flights of the same instrument give a repeatability estimate, which is what a detector design for a lunar habitat actually needs.",
+      "earth_spinoff": "Detector calibration standards for low-airflow spaces.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "DAFT",
+      "name": "Dust and Aerosol Measurement Feasibility Test",
+      "short": "A smoke instrument repurposed to measure cabin and lunar dust.",
+      "pillars": [
+        "detection"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SAME aerosol instrument, repurposed",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "lunar regolith simulant",
+        "cabin dust"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "dust aerosol, low flow",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "particle size distribution",
+        "number concentration",
+        "instrument false-alarm rate"
+      ],
+      "finding": "The same optical instrument that detects smoke also detects dust, which means a detector on the Moon must discriminate nuisance dust from fire signatures - a false-alarm problem created by the environment, not the sensor.",
+      "finding_basis": "published",
+      "partial_g_note": "Dust settling differs sharply between 0g and lunar gravity, so DAFT's 0g false-alarm rate is a pessimistic bound for a lunar habitat.",
+      "earth_spinoff": "Industrial warehouse and firefighter dust/smoke sensing.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "DAFT-2",
+      "name": "Dust and Aerosol Measurement Feasibility Test - 2",
+      "short": "Extended dust measurement with more simulants and concentrations.",
+      "pillars": [
+        "detection"
+      ],
+      "facility": "Microgravity Science Glovebox (MSG)",
+      "hardware": "SAME aerosol instrument, repurposed",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "lunar regolith simulant",
+        "Martian simulant",
+        "cabin dust"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "dust aerosol, high concentration",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "particle size distribution",
+        "number concentration",
+        "instrument false-alarm rate"
+      ],
+      "finding": "DAFT-2 bounded the concentration range over which a smoke detector can be trusted in a dusty cabin, which is directly a design input for lunar surface habitats.",
+      "finding_basis": "published",
+      "partial_g_note": "Same instrument, wider envelope: gives the sensitivity floor a lunar detector must beat.",
+      "earth_spinoff": "Nuisance-alarm reduction in mining and grain handling.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "FLEX",
+      "name": "Flame Extinguishment Experiment",
+      "short": "Liquid fuel droplet burning and extinguishment by CO2 and helium dilution.",
+      "pillars": [
+        "suppression"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "Multi-user Droplet Combustion Apparatus (MDCA)",
+      "phase": [
+        "liquid"
+      ],
+      "fuels": [
+        "heptane",
+        "methanol",
+        "decane"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "air, no diluent",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "CO2-diluted",
+          "o2_pct": 18.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "helium-diluted",
+          "o2_pct": 18.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "burn rate constant",
+        "extinction diameter",
+        "radiative fraction",
+        "soot volume fraction"
+      ],
+      "finding": "Droplet flames extinguish at a well-defined diameter in microgravity, and CO2 suppresses far more effectively than helium at the same dilution because of its heat capacity rather than its oxygen displacement.",
+      "finding_basis": "published",
+      "partial_g_note": "Suppression agent effectiveness is chemistry, not gravity, so FLEX's ranking of CO2 over helium transfers to lunar gravity with little correction - unlike the spread-rate data.",
+      "earth_spinoff": "Fine-water-mist extinguishers, clean-agent selection, cool-flame engine concepts.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "FLEX-2",
+      "name": "Flame Extinguishment Experiment - 2",
+      "short": "Soot, radiative loss and near-limit droplet burning across fuels and pressures.",
+      "pillars": [
+        "suppression",
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "Multi-user Droplet Combustion Apparatus (MDCA)",
+      "phase": [
+        "liquid"
+      ],
+      "fuels": [
+        "heptane",
+        "methanol",
+        "ethanol",
+        "iso-octane"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low pressure",
+          "o2_pct": 21.0,
+          "pressure_psi": 7.35,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "ambient pressure",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "elevated pressure",
+          "o2_pct": 21.0,
+          "pressure_psi": 29.4,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "Elevated oxygen droplet combustion",
+          "o2_pct": 30.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal",
+          "atmosphere_category": "Enriched Oxygen Hazard",
+          "notes": "Investigate radiative soot loss and extinction diameter in oxygen-enriched atmosphere."
+        },
+        {
+          "label": "Martian atmospheric pressure analog",
+          "o2_pct": 21.0,
+          "pressure_psi": 7.0,
+          "flow_cm_s": 2.0,
+          "gravity_g": 0.38,
+          "basis": "nominal",
+          "atmosphere_category": "Martian Habitat Analog",
+          "notes": "Simulated low pressure droplet evaporation and burning under 0.38g."
+        }
+      ],
+      "measurements": [
+        "burn rate constant",
+        "soot volume fraction",
+        "radiative heat loss",
+        "extinction diameter"
+      ],
+      "finding": "Radiative loss becomes the dominant sink near the flammability limit in microgravity, so a flame can extinguish purely by radiating heat away - a mechanism with no 1g counterpart at the same scale.",
+      "finding_basis": "published",
+      "partial_g_note": "Radiative extinction is scale-dependent rather than gravity-dependent, which makes FLEX-2 the most transferable dataset for lunar habitats at large sample size.",
+      "earth_spinoff": "Soot models for gas turbines and fire-suppression agent sizing.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "CFI",
+      "name": "Cool Flames Investigation",
+      "short": "Low-temperature 'cool flame' burning of droplets, invisible to the eye.",
+      "pillars": [
+        "prevention",
+        "detection"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "Multi-user Droplet Combustion Apparatus (MDCA)",
+      "phase": [
+        "liquid"
+      ],
+      "fuels": [
+        "heptane",
+        "methanol",
+        "decane"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "low oxygen, near-limit",
+          "o2_pct": 15.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "cool-flame duration",
+        "radical concentration",
+        "droplet diameter history",
+        "formaldehyde yield"
+      ],
+      "finding": "Cool flames burn at temperatures far below visible ignition and can persist for many seconds, producing formaldehyde and carbon monoxide without a visible flame - a detection hazard in a crewed cabin.",
+      "finding_basis": "published",
+      "partial_g_note": "Cool-flame chemistry is gravity-independent; only the transport that sustains it changes. Expect the same low-temperature hazard at lunar gravity.",
+      "earth_spinoff": "Low-temperature combustion engines, formaldehyde emission control.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-CFI-G",
+      "name": "ACME Cool Flames Investigation with Gases",
+      "short": "Gaseous cool flames, including inside-out spherical flames at up to 85% oxygen.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert (spherical burner)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "propane",
+        "methane",
+        "nitrogen-diluted mixtures"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "inside-out flame, 85% O2",
+          "o2_pct": 85.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "brief"
+        },
+        {
+          "label": "inside-out flame, 50% O2",
+          "o2_pct": 50.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "inside-out flame, 30% O2",
+          "o2_pct": 30.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "cool-flame duration",
+        "flame temperature",
+        "species concentration",
+        "radical pool"
+      ],
+      "finding": "The highest-oxygen microgravity combustion tests in PSI: an oxygen-nitrogen mixture of up to 85% oxygen flows outward from a spherical burner into a propane-filled chamber, inverting the usual flame geometry so the oxidizer arrives from inside.",
+      "finding_basis": "brief",
+      "partial_g_note": "This is the only PSI dataset that brackets the oxygen concentration a lunar habitat may actually use, so it anchors the high-oxygen end of any habitat risk assessment.",
+      "earth_spinoff": "High-efficiency low-temperature combustion, oxygen-enriched industrial burners.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-BRE",
+      "name": "ACME Burning Rate Emulator",
+      "short": "A gas flame that behaves like a burning solid, in still atmospheres.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert (porous burner)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "gaseous simulant of a solid fuel"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "still atmosphere, ambient O2",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "still atmosphere, elevated O2",
+          "o2_pct": 30.0,
+          "pressure_psi": 10.2,
+          "flow_cm_s": 0.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "burning rate",
+        "heat flux to surface",
+        "flame standoff distance"
+      ],
+      "finding": "Burning a gaseous simulant through a porous burner reproduces the heat-feedback of a solid fuel while letting material properties be varied independently - the only way to isolate which material property sets flammability in a still atmosphere.",
+      "finding_basis": "published",
+      "partial_g_note": "Because BRE is a still-atmosphere test, buoyancy is the only transport mechanism, so it is the most gravity-sensitive investigation in PSI and the most important to repeat at partial gravity.",
+      "earth_spinoff": "Material flammability screening without destructive testing.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-E-FIELD",
+      "name": "ACME Electric-Field Effects on Laminar Diffusion Flames",
+      "short": "Electric fields acting on flame ions to mimic partial gravity.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert (high-voltage mesh)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "methane",
+        "propane co-flow"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "no field",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 8.4,
+          "basis": "nominal"
+        },
+        {
+          "label": "moderate field",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 8.4,
+          "basis": "nominal"
+        },
+        {
+          "label": "high field",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 8.4,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "ion wind velocity",
+        "flame shape",
+        "soot emission",
+        "flame extinction limit"
+      ],
+      "finding": "An applied electric field drags flame ions and induces an ion wind that reshapes the flame the way buoyancy would, so partial gravity was mimicked without ever leaving 0g.",
+      "finding_basis": "brief",
+      "partial_g_note": "This is the closest thing to partial-gravity data in PSI, and it is still not partial-gravity data: it reproduces the flow effect of buoyancy, not the hydrostatic and heat-transfer effects.",
+      "earth_spinoff": "Electrically controlled low-emission industrial burners; soot suppression.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-PROGRAM",
+      "name": "ACME project (six experiments, shared hardware)",
+      "short": "Advanced Combustion via Microgravity Experiments: six gaseous-fuel studies on one modular rack insert set.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert set (shared across all six)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "methane",
+        "propane",
+        "ethylene",
+        "gaseous simulants"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "shared rack baseline",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "brief"
+        }
+      ],
+      "measurements": [
+        "flame shape",
+        "soot",
+        "extinction limits",
+        "burning rate"
+      ],
+      "finding": "All six ACME experiments used the same modular hardware in the CIR, so their results are directly comparable in a way that results from different racks are not - hardware is a hidden confounder in cross-investigation comparison.",
+      "finding_basis": "brief",
+      "partial_g_note": "Comparability across ACME runs is the template for how a lunar campaign should be designed: hold hardware fixed, vary gravity.",
+      "earth_spinoff": "Modular test-rig design for industrial burner qualification.",
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-CLD",
+      "name": "ACME Coflow Laminar Diffusion Flame",
+      "short": "Weak methane and ethylene co-flow diffusion flames across fuel dilution extremes (32 ISS test days).",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert (coflow burner)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "methane",
+        "ethylene"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "diluted methane co-flow (30-40% CH4)",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "diluted ethylene co-flow",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 10.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame shape",
+        "liftoff height",
+        "extinction limit",
+        "soot luminosity"
+      ],
+      "finding": "Characterized weak co-flow methane and ethylene diffusion flames across extreme nitrogen dilution levels aboard the ISS (32 test-day rows in PSI-21), anchoring computational kinetics models near extinction.",
+      "finding_basis": "published",
+      "partial_g_note": "Extends gaseous co-flow extinction data at 0 g; pairs with SLICE and SPICE to bound forced-flow flame stability without buoyancy.",
+      "earth_spinoff": "Turbulent reacting-flow kinetic validation and low-emission industrial gas burners.",
+      "sources": [
+        {
+          "label": "NASA PSI-21",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "ACME-S-FLAME",
+      "name": "ACME Structure & Response of Spherical Diffusion Flames",
+      "short": "Transient structure, temperature, and chemiluminescence of soot-free and sooty spherical flames.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Combustion Integrated Rack (CIR)",
+      "hardware": "ACME modular insert (spherical burner)",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "ethylene",
+        "methane",
+        "nitrogen-diluted mixtures"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "nitrogen-diluted ethylene (~21% O2)",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 2.0,
+          "basis": "nominal"
+        },
+        {
+          "label": "elevated-O2 spherical burn",
+          "o2_pct": 30.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 2.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flame radius",
+        "temperature profile",
+        "OH chemiluminescence",
+        "radiative extinction"
+      ],
+      "finding": "Measured transient structure and radiative response of spherical diffusion flames in both soot-free and sooty regimes aboard ISS (18 test-day records in PSI-23).",
+      "finding_basis": "published",
+      "partial_g_note": "Purely spherical 0 g diffusion flames set the zero-buoyancy limit for gas-phase flame spread and radiative heat loss.",
+      "earth_spinoff": "Fundamental chemical kinetics validation for cleaner, higher-efficiency engine combustors.",
+      "sources": [
+        {
+          "label": "NASA PSI-23",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "PSI-60-SPICE",
+      "name": "Computational & Experimental Analysis of SPICE Data Sets",
+      "short": "Ground/CFD re-analysis deriving temperature and soot volume fractions from 0 g SPICE vs 1 g flames.",
+      "pillars": [
+        "prevention"
+      ],
+      "facility": "Ground / PSI Analysis",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "gas"
+      ],
+      "fuels": [
+        "ethylene",
+        "methane",
+        "propane"
+      ],
+      "gravity_g": [
+        0.0,
+        1.0
+      ],
+      "conditions": [
+        {
+          "label": "0 g SPICE re-analysis",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 15.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "soot volume fraction",
+        "temperature distribution",
+        "radiative transport"
+      ],
+      "finding": "Integrated computational modeling with PSI-107 SPICE flight data to quantify why 0 g co-flow flames form more soot and higher radiative heat loads than 1 g flames.",
+      "finding_basis": "published",
+      "partial_g_note": "Directly bridges 0 g and 1 g soot/radiation physics, helping bound radiative preheating risk in partial-gravity habitats.",
+      "earth_spinoff": "Predictive soot and radiation models for cleaner terrestrial propulsion and fire suppression.",
+      "sources": [
+        {
+          "label": "NASA PSI-60",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "PSI-62-FGM",
+      "name": "Concurrent Flame Spread Modeling (FGM) vs BASS",
+      "short": "Large Eddy Simulation & Flamelet Generated Manifold modeling validated against BASS tomography.",
+      "pillars": [
+        "prevention",
+        "suppression"
+      ],
+      "facility": "Ground / PSI Analysis",
+      "hardware": "SPICE modular fan-driven flow duct",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "PMMA (acrylic) rod",
+        "solid fuels"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "concurrent flow validation",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 10.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "flamelet manifold",
+        "concurrent spread rate",
+        "two-color tomography"
+      ],
+      "finding": "Developed and validated Flamelet Generated Manifold (FGM) LES subgrid models for microgravity concurrent solid-fuel spread against BASS flight data.",
+      "finding_basis": "published",
+      "partial_g_note": "Provides physics-based CFD subgrid tools needed to extrapolate BASS solid flammability limits toward partial gravity.",
+      "earth_spinoff": "Predictive material-flammability LES screening tools for spacecraft and terrestrial transport.",
+      "sources": [
+        {
+          "label": "NASA PSI-62",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "PSI-115-SAME",
+      "name": "Advanced Smoke Modeling & Simulation from SAME Data",
+      "short": "Numerical modeling quantifying how gravity drives pyrolysis smoke particle growth in SAME/SAME-R.",
+      "pillars": [
+        "detection"
+      ],
+      "facility": "Ground / PSI Analysis",
+      "hardware": "Aerosol smoke duct with commercial detector heads",
+      "phase": [
+        "solid"
+      ],
+      "fuels": [
+        "Kapton",
+        "silicone",
+        "cotton",
+        "Teflon"
+      ],
+      "gravity_g": [
+        0.0,
+        1.0
+      ],
+      "conditions": [
+        {
+          "label": "pyrolysis smoke growth (0 g vs 1 g)",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 5.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "particle agglomeration",
+        "gravity sensitivity",
+        "smoke optical signature"
+      ],
+      "finding": "Quantified the fluid-dynamic mechanisms separating 0 g and 1 g pyrolysis smoke particle distributions using PSI-102 SAME flight data.",
+      "finding_basis": "published",
+      "partial_g_note": "Links 0 g and 1 g smoke growth mechanisms so detector thresholds can be bracketed for lunar (0.16 g) and Martian (0.38 g) cabins.",
+      "earth_spinoff": "Next-generation particle-aware smoke detectors for industrial and residential safety.",
+      "sources": [
+        {
+          "label": "NASA PSI-115",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "PSI-117-FLEX",
+      "name": "Thermo-Convective Perturbation on Cool Flame Dynamics",
+      "short": "Multi-physics CFD analysis of FLEX droplet cool-flame stability and run-to-run variability.",
+      "pillars": [
+        "prevention",
+        "suppression"
+      ],
+      "facility": "Ground / PSI Analysis",
+      "hardware": "Multi-user Droplet Combustion Apparatus (MDCA)",
+      "phase": [
+        "liquid"
+      ],
+      "fuels": [
+        "heptane",
+        "decane"
+      ],
+      "gravity_g": [
+        0.0
+      ],
+      "conditions": [
+        {
+          "label": "perturbed droplet cool flame",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 2.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "cool-flame stability",
+        "convective perturbation sensitivity",
+        "extinction boundary"
+      ],
+      "finding": "Used PSI-69 FLEX flight data to resolve how weak convective/thermal perturbations govern droplet cool-flame persistence and extinction variability.",
+      "finding_basis": "published",
+      "partial_g_note": "Shows how small convective velocities (such as weak lunar/Martian buoyancy) perturb near-limit cool flames.",
+      "earth_spinoff": "Low-temperature engine knock mitigation and validated droplet combustion CFD models.",
+      "sources": [
+        {
+          "label": "NASA PSI-117",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "PSI-142-COOL",
+      "name": "Cool Flame Transitions at Radiation / Stretch Extinction",
+      "short": "Ground ozone-sensitized counterflow flames + FLEX analysis mapping cool/warm flame transitions.",
+      "pillars": [
+        "prevention",
+        "detection"
+      ],
+      "facility": "Ground / Counterflow & PSI FLEX Analysis",
+      "hardware": "Ozone-sensitized counterflow burner + MDCA",
+      "phase": [
+        "liquid",
+        "gas"
+      ],
+      "fuels": [
+        "heptane",
+        "n-alkanes"
+      ],
+      "gravity_g": [
+        0.0,
+        1.0
+      ],
+      "conditions": [
+        {
+          "label": "counterflow stretch / radiation limit",
+          "o2_pct": 21.0,
+          "pressure_psi": 14.7,
+          "flow_cm_s": 12.0,
+          "basis": "nominal"
+        }
+      ],
+      "measurements": [
+        "cool-warm-hot transition",
+        "double reaction zone",
+        "radiation extinction limit"
+      ],
+      "finding": "Revealed the double reaction-zone structure of warm diffusion flames mediating transitions between cool and hot flames across 8 summary data entries in PSI-142.",
+      "finding_basis": "published",
+      "partial_g_note": "Maps stretch- vs radiation-driven cool-flame limits across 1 g counterflow and 0 g FLEX data.",
+      "earth_spinoff": "Ultra-lean low-temperature engine kinetics and invisible-flame hazard boundaries.",
+      "sources": [
+        {
+          "label": "NASA PSI-142",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "upcoming": [
+    {
+      "id": "LUCI",
+      "name": "Lunar-g Combustion Investigation",
+      "status": "planned",
+      "note": "Will provide the first true partial-gravity combustion data, on the lunar surface.",
+      "target_gravity_g": 0.16,
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "FM2",
+      "name": "Flammability of Materials on the Moon",
+      "status": "planned",
+      "note": "Will measure material flammability at lunar gravity, closing the material-selection gap.",
+      "target_gravity_g": 0.16,
+      "sources": [
+        {
+          "label": "NASA PSI challenge brief",
+          "page": 1
+        }
+      ]
+    }
+  ]
+}

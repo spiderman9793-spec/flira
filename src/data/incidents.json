@@ -1,0 +1,91 @@
+[
+  {
+    "id": "apollo-13",
+    "name": "Apollo 13 Cryogenic Oxygen Tank Explosion",
+    "mission": "Apollo 13 (CSM-109 / Odyssey)",
+    "date": "1970-04-13",
+    "flight_phase": "Translunar Coast (200,000 miles from Earth)",
+    "atmosphere": {
+      "o2_pct": 100.0,
+      "pressure_psia": 1000.0,
+      "environment_desc": "Supercritical cryogenic oxygen inside Service Module Tank 2"
+    },
+    "ignition_source": "Electrical arc across uninsulated wire during cryo-stir fan activation",
+    "materials_involved": [
+      "Teflon (PTFE) wire insulation",
+      "Aluminum conduit tube",
+      "Supercritical liquid oxygen"
+    ],
+    "root_cause": "Thermostatic switches were upgraded on the pad from 28V DC to 65V DC ground power but contacts welded shut during pre-flight detanking, heating the interior to over 1,000°F and severely embrittling/stripping the Teflon wire insulation.",
+    "fire_dynamics": "In pure supercritical O₂ at high pressure, materials considered flame-resistant on Earth (like Teflon) burn vigorously. The resulting combustion released heat rapidly, skyrocketing pressure beyond the vessel's burst limit (>1,000 psia) and blowing off the outer aluminum Sector 4 panel.",
+    "outcome": "Loss of Service Module O₂ tanks 1 & 2, water, and fuel-cell electricity. Crew survived by using Lunar Module Aquarius as a lifeboat for 4 days.",
+    "engineering_redesigns": [
+      "Eliminated internal destratification stir fans and electric motors inside cryogenic tanks.",
+      "Replaced all internal aluminum wiring conduits with stainless steel sheathing.",
+      "Enforced strict 28V DC thermostat compatibility and added independent temperature cutoffs.",
+      "Added a third isolated auxiliary cryogenic oxygen tank in Service Module Sector 1.",
+      "Mandated strict high-pressure oxygen materials flammability screening (NASA-STD-6001 Test 17)."
+    ],
+    "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-13"
+  },
+  {
+    "id": "apollo-1",
+    "name": "Apollo 1 (AS-204) Launch Pad Fire",
+    "mission": "Apollo 1 (CM-012)",
+    "date": "1967-01-27",
+    "flight_phase": "Pre-launch 'Plugs-Out' countdown simulation at Cape Kennedy Pad 34",
+    "atmosphere": {
+      "o2_pct": 100.0,
+      "pressure_psia": 16.7,
+      "environment_desc": "100% pure oxygen at 2 psi above standard sea-level ambient (115 kPa)"
+    },
+    "ignition_source": "Electrical arc from silver-plated copper wire with chafed Teflon insulation near Environmental Control Unit",
+    "materials_involved": [
+      "Nylon cargo nets & debris traps",
+      "Velcro hook-and-loop fasteners (over 34 sq ft)",
+      "Polyurethane foam couch cushions",
+      "Ethylene glycol/water coolant leaks",
+      "Teflon wire insulation"
+    ],
+    "root_cause": "Combustible materials were widely distributed in the cabin alongside exposed high-voltage wiring, all enveloped in 100% pure oxygen at elevated pressure (16.7 psia), lowering ignition energies to fractions of a millijoule and accelerating flame spread by orders of magnitude.",
+    "fire_dynamics": "Flames flashed across nylon netting and Velcro in seconds, generating intense heat (over 2,500°F). Cabin pressure spiked to 29–37 psia within 17 seconds, rupturing the Command Module inner pressure hull. Inward-opening hatch required 90 seconds to unlatch, trapping crew.",
+    "outcome": "Fatalities of Gus Grissom, Ed White, and Roger Chaffee due to carbon monoxide asphyxiation and thermal burns.",
+    "engineering_redesigns": [
+      "Replaced inward-opening hatch with outward-opening quick-release hatch operable in under 7 seconds.",
+      "Replaced 100% O₂ pad atmosphere with mixed gas: 60% N₂ / 40% O₂ at launch (14.7 psia), transitioning to 100% O₂ at 5 psia in orbit.",
+      "Eliminated all flammable plastics, nylon, and polyurethane; mandated Beta cloth (woven silica glass coated with Teflon) and Nomex.",
+      "Developed non-flammable Polybenzimidazole (PBI) synthetic fabrics with Celanese.",
+      "Instituted NASA-STD-6001 strict upward-flame-propagation material qualification testing."
+    ],
+    "url": "https://sma.nasa.gov/sma-disciplines/accllp/apollo-1"
+  },
+  {
+    "id": "mir-1997",
+    "name": "Fire Aboard Russian Space Station Mir",
+    "mission": "Mir Expedition EO-23 / STS-81 / NASA-4",
+    "date": "1997-02-23",
+    "flight_phase": "Low Earth Orbit (390 km altitude) joint Russian-American operations",
+    "atmosphere": {
+      "o2_pct": 21.0,
+      "pressure_psia": 14.7,
+      "environment_desc": "Standard cabin air at microgravity (0g)"
+    },
+    "ignition_source": "Thermal run-away / mechanical defect inside solid-fuel oxygen generator (Vika / TGK canister)",
+    "materials_involved": [
+      "Lithium perchlorate chemical 'candle'",
+      "Molten lithium",
+      "Mild steel canister shell",
+      "Insulation blankets"
+    ],
+    "root_cause": "A chemical oxygen generator canister ruptured during ignition/burning, allowing hot molten metal and burning chemical fuel to spray into the Kvant-1 module, torching like a blowtorch against the station's aluminum hull.",
+    "fire_dynamics": "In microgravity, thick smoke filled the station without thermal buoyancy or stratification, creating zero visibility from ceiling to floor. Toxic fumes (carbon monoxide, acrolein) spread into living quarters. Foam from water-based extinguishers dispersed into floating spheres, requiring physical contact to blanket the canister.",
+    "outcome": "Crew of 6 (including NASA astronaut Jerry Linenger) survived after battling the blaze for 14 minutes using multiple foam extinguishers while wearing industrial breathing masks. The fire blocked access to one of the two docked Soyuz escape vehicles.",
+    "engineering_redesigns": [
+      "Compartmentalized oxygen generator enclosures with dedicated isolation fire doors.",
+      "Mandated that emergency escape spacecraft (Soyuz / Orion / Starliner) ingress paths must never be obstructed by critical life-support machinery.",
+      "Redesigned spacecraft smoke masks to provide high-efficiency particulate and carbon monoxide catalysis for microgravity egress.",
+      "Developed specialized microgravity fire suppression training (foam adhesion without droplet dispersion)."
+    ],
+    "url": "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"
+  }
+]

@@ -1,0 +1,51 @@
+Condition Code,Investigation Code,Investigation Name,Condition Label,Oxygen %,Pressure (psia),Forced Flow (cm/s),Gravity (g),Basis,Atmosphere Category,Suppression / Extinction Observed
+BASS-C01,BASS,Burning and Suppression of Solids,quiescent cabin air,21.0,14.7,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-C02,BASS,Burning and Suppression of Solids,low forced flow,21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-C03,BASS,Burning and Suppression of Solids,moderate forced flow,21.0,14.7,15.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-C04,BASS,Burning and Suppression of Solids,Artemis EVA exploration atmosphere,34.0,8.2,10.0,0.0,nominal,"Exploration EVA (8.2 psia, 34% O2)",Unknown / Not recorded
+BASS-C05,BASS,Burning and Suppression of Solids,Lunar surface analog (0.166g predicted),21.0,14.7,10.0,0.166,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-II-C01,BASS-II,Burning and Suppression of Solids - II,"low flow, ambient air",21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-II-C02,BASS-II,Burning and Suppression of Solids - II,"mid flow, ambient air",21.0,14.7,10.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-II-C03,BASS-II,Burning and Suppression of Solids - II,"elevated flow, ambient air",21.0,14.7,20.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+BASS-II-C04,BASS-II,Burning and Suppression of Solids - II,Hypoxic cabin extinction limit,14.8,14.7,5.0,0.0,published,Hypoxic / Extinction Testing,Unknown / Not recorded
+BASS-II-C05,BASS-II,Burning and Suppression of Solids - II,Artemis EVA pre-breathe PMMA ignition boundary,34.0,8.2,15.0,0.0,nominal,"Exploration EVA (8.2 psia, 34% O2)",Unknown / Not recorded
+SPICE-C01,SPICE,Smoke Point In Co-flow Experiment,"co-flow, low velocity",21.0,14.7,10.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SPICE-C02,SPICE,Smoke Point In Co-flow Experiment,"co-flow, high velocity",21.0,14.7,20.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SLICE-C01,SLICE,Structure and Liftoff In Combustion Experiment,attached flame,21.0,14.7,8.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SLICE-C02,SLICE,Structure and Liftoff In Combustion Experiment,lifted flame,21.0,14.7,25.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SAFFIRE-I-C01,SAFFIRE-I,Spacecraft Fire Safety Demonstration - I,"low pressure, elevated O2",34.5,2.98,20.0,0.0,nominal,"Exploration EVA (8.2 psia, 34% O2)",Unknown / Not recorded
+SAFFIRE-II-C01,SAFFIRE-II,Spacecraft Fire Safety Demonstration - II,"low pressure, elevated O2",34.5,2.98,20.0,0.0,nominal,"Exploration EVA (8.2 psia, 34% O2)",Unknown / Not recorded
+SAFFIRE-III-C01,SAFFIRE-III,Spacecraft Fire Safety Demonstration - III,"low pressure, elevated O2",34.5,2.98,20.0,0.0,nominal,"Exploration EVA (8.2 psia, 34% O2)",Unknown / Not recorded
+SAME-C01,SAME,Smoke and Aerosol Measurement Experiment,smouldering smoke source,21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SAME-C02,SAME,Smoke and Aerosol Measurement Experiment,flaming smoke source,21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SAME-R-C01,SAME-R,Smoke and Aerosol Measurement Experiment - Reflight,"low flow, smouldering",21.0,14.7,3.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+SAME-R-C02,SAME-R,Smoke and Aerosol Measurement Experiment - Reflight,"low flow, flaming",21.0,14.7,8.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+DAFT-C01,DAFT,Dust and Aerosol Measurement Feasibility Test,"dust aerosol, low flow",21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+DAFT-2-C01,DAFT-2,Dust and Aerosol Measurement Feasibility Test - 2,"dust aerosol, high concentration",21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+FLEX-C01,FLEX,Flame Extinguishment Experiment,"air, no diluent",21.0,14.7,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+FLEX-C02,FLEX,Flame Extinguishment Experiment,CO2-diluted,18.0,14.7,0.0,0.0,nominal,Hypoxic / Extinction Testing,Unknown / Not recorded
+FLEX-C03,FLEX,Flame Extinguishment Experiment,helium-diluted,18.0,14.7,0.0,0.0,nominal,Hypoxic / Extinction Testing,Unknown / Not recorded
+FLEX-2-C01,FLEX-2,Flame Extinguishment Experiment - 2,low pressure,21.0,7.35,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+FLEX-2-C02,FLEX-2,Flame Extinguishment Experiment - 2,ambient pressure,21.0,14.7,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+FLEX-2-C03,FLEX-2,Flame Extinguishment Experiment - 2,elevated pressure,21.0,29.4,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+FLEX-2-C04,FLEX-2,Flame Extinguishment Experiment - 2,Elevated oxygen droplet combustion,30.0,14.7,0.0,0.0,nominal,Enriched Oxygen Hazard,Unknown / Not recorded
+FLEX-2-C05,FLEX-2,Flame Extinguishment Experiment - 2,Martian atmospheric pressure analog,21.0,7.0,2.0,0.38,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+CFI-C01,CFI,Cool Flames Investigation,"low oxygen, near-limit",15.0,14.7,0.0,0.0,nominal,Hypoxic / Extinction Testing,Unknown / Not recorded
+ACME-CFI-G-C01,ACME-CFI-G,ACME Cool Flames Investigation with Gases,"inside-out flame, 85% O2",85.0,14.7,5.0,0.0,brief,Enriched Oxygen Hazard,Unknown / Not recorded
+ACME-CFI-G-C02,ACME-CFI-G,ACME Cool Flames Investigation with Gases,"inside-out flame, 50% O2",50.0,14.7,5.0,0.0,nominal,Enriched Oxygen Hazard,Unknown / Not recorded
+ACME-CFI-G-C03,ACME-CFI-G,ACME Cool Flames Investigation with Gases,"inside-out flame, 30% O2",30.0,14.7,5.0,0.0,nominal,Enriched Oxygen Hazard,Unknown / Not recorded
+ACME-BRE-C01,ACME-BRE,ACME Burning Rate Emulator,"still atmosphere, ambient O2",21.0,14.7,0.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-BRE-C02,ACME-BRE,ACME Burning Rate Emulator,"still atmosphere, elevated O2",30.0,10.2,0.0,0.0,nominal,Enriched Oxygen Hazard,Unknown / Not recorded
+ACME-E-FIELD-C01,ACME-E-FIELD,ACME Electric-Field Effects on Laminar Diffusion Flames,no field,21.0,14.7,8.4,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-E-FIELD-C02,ACME-E-FIELD,ACME Electric-Field Effects on Laminar Diffusion Flames,moderate field,21.0,14.7,8.4,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-E-FIELD-C03,ACME-E-FIELD,ACME Electric-Field Effects on Laminar Diffusion Flames,high field,21.0,14.7,8.4,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-PROGRAM-C01,ACME-PROGRAM,"ACME project (six experiments, shared hardware)",shared rack baseline,21.0,14.7,5.0,0.0,brief,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-CLD-C01,ACME-CLD,ACME Coflow Laminar Diffusion Flame,diluted methane co-flow (30-40% CH4),21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-CLD-C02,ACME-CLD,ACME Coflow Laminar Diffusion Flame,diluted ethylene co-flow,21.0,14.7,10.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-S-FLAME-C01,ACME-S-FLAME,ACME Structure & Response of Spherical Diffusion Flames,nitrogen-diluted ethylene (~21% O2),21.0,14.7,2.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+ACME-S-FLAME-C02,ACME-S-FLAME,ACME Structure & Response of Spherical Diffusion Flames,elevated-O2 spherical burn,30.0,14.7,2.0,0.0,nominal,Enriched Oxygen Hazard,Unknown / Not recorded
+PSI-60-SPICE-C01,PSI-60-SPICE,Computational & Experimental Analysis of SPICE Data Sets,0 g SPICE re-analysis,21.0,14.7,15.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+PSI-62-FGM-C01,PSI-62-FGM,Concurrent Flame Spread Modeling (FGM) vs BASS,concurrent flow validation,21.0,14.7,10.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+PSI-115-SAME-C01,PSI-115-SAME,Advanced Smoke Modeling & Simulation from SAME Data,pyrolysis smoke growth (0 g vs 1 g),21.0,14.7,5.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+PSI-117-FLEX-C01,PSI-117-FLEX,Thermo-Convective Perturbation on Cool Flame Dynamics,perturbed droplet cool flame,21.0,14.7,2.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
+PSI-142-COOL-C01,PSI-142-COOL,Cool Flame Transitions at Radiation / Stretch Extinction,counterflow stretch / radiation limit,21.0,14.7,12.0,0.0,nominal,"Standard Sea Level (21% O2, 14.7 psia)",Unknown / Not recorded
