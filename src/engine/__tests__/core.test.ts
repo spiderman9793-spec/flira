@@ -109,9 +109,9 @@ describe('hybrid retrieval & source-firewall copilot', () => {
     expect(ans.auditTrail.length).toBeGreaterThanOrEqual(4);
   });
 
-  it('loads all 22 NASA PSI experimental tables and preserves verbatim SAFFIRE-I oxygen values', async () => {
-    expect(PSI_RUNS.table_count).toBe(22);
-    expect(PSI_RUNS.total_run_rows).toBeGreaterThan(2000);
+  it('loads all 31 NASA PSI experimental tables and preserves verbatim SAFFIRE-I oxygen values', async () => {
+    expect(PSI_RUNS.table_count).toBe(31);
+    expect(PSI_RUNS.total_run_rows).toBeGreaterThan(4500);
 
     const matches = findVerbatimRunMatches('oxygen SAFFIRE-I', ['PSI-98'], 3);
     expect(matches.some((m) => m.accession === 'PSI-98' && m.summary.includes('21.5 - 21.7'))).toBe(

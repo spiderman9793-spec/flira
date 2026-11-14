@@ -23,7 +23,7 @@ export interface CopilotAnswer {
   text: string;
   citations: string[];
   unresolved: string[];
-  mode: 'openrouter' | 'gemini' | 'local';
+  mode: 'openrouter' | 'gemini' | 'local' | 'local_model';
   badge: string;
   grounded: number;
   notes: string[];
@@ -89,9 +89,11 @@ export async function askCopilot(
   env: Environment,
   options: {
     cloudEnabled?: boolean;
-    provider?: 'openrouter' | 'gemini';
+    provider?: 'openrouter' | 'gemini' | 'local_model';
     apiKey?: string;
     openrouterKey?: string;
+    localModelUrl?: string;
+    localModelName?: string;
     history?: ConversationTurnRef[];
   } = {}
 ): Promise<CopilotAnswer> {
@@ -268,7 +270,7 @@ export async function askCopilot(
   const activeKey =
     provider === 'openrouter' ? options.openrouterKey?.trim() : options.apiKey?.trim();
 
-  if (options.cloudEnabled && activeKey) {
+  if ((options.cloudEnabled && activeKey) || provider === 'local_model') {
     const contextLines: string[] = [
       `ACTIVE ENVIRONMENT: gravity=${env.gravity_g.toFixed(2)}g, pressure=${env.pressure_psi.toFixed(
         1
@@ -303,7 +305,30 @@ Hard rules:
       let candidateText: string | undefined;
       let usedModel = '';
 
-      if (provider === 'openrouter') {
+      if (provider === 'local_model') {
+        const localUrl = (options.localModelUrl?.trim() || 'http://localhost:11434/v1').replace(/\/+$/, '');
+        const modelName = options.localModelName?.trim() || 'llama3';
+        const resp = await fetch(`${localUrl}/chat/completions`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: modelName,
+            temperature: 0.1,
+            messages: [
+              { role: 'system', content: systemPrompt },
+              { role: 'user', content: `CONTEXT:\n${contextLines.join('\n')}\n\nQUESTION: ${q}` },
+            ],
+          }),
+        });
+        if (resp.ok) {
+          const data = await resp.json();
+          const textOut = data?.choices?.[0]?.message?.content?.trim();
+          if (textOut) {
+            candidateText = textOut;
+            usedModel = `Local Pretrained (${modelName})`;
+          }
+        }
+      } else if (provider === 'openrouter') {
         const orModels = [
           'openrouter/free',
           'google/gemma-4-31b-it:free',
@@ -350,7 +375,7 @@ Hard rules:
         for (const modelName of modelsToTry) {
           const resp = await fetch(
             `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${encodeURIComponent(
-              activeKey
+              activeKey || ''
             )}`,
             {
               method: 'POST',

@@ -39,7 +39,7 @@ export function CopilotView({ env, extraChunks = [] }: CopilotViewProps) {
   const [question, setQuestion] = useState(SUGGESTIONS[0]);
   const [turns, setTurns] = useState<Turn[]>([]);
   const [busy, setBusy] = useState(false);
-  const [provider, setProvider] = useState<'openrouter' | 'gemini'>(
+  const [provider, setProvider] = useState<'openrouter' | 'gemini' | 'local_model'>(
     ENV_OPENROUTER_KEY ? 'openrouter' : 'gemini'
   );
   const [cloudEnabled, setCloudEnabled] = useState(
@@ -47,6 +47,8 @@ export function CopilotView({ env, extraChunks = [] }: CopilotViewProps) {
   );
   const [apiKey, setApiKey] = useState(ENV_GEMINI_KEY);
   const [openrouterKey, setOpenrouterKey] = useState(ENV_OPENROUTER_KEY);
+  const [localModelUrl, setLocalModelUrl] = useState('http://localhost:11434/v1');
+  const [localModelName, setLocalModelName] = useState('llama3');
   const [openAuditIdx, setOpenAuditIdx] = useState<number | null>(0);
 
   const runQuery = async (qOverride?: string) => {
@@ -60,10 +62,12 @@ export function CopilotView({ env, extraChunks = [] }: CopilotViewProps) {
         matchedIds: t.answer.matchedInvestigations.map((m) => m.id),
       }));
       const answer = await askCopilot(q, index, env, {
-        cloudEnabled,
+        cloudEnabled: cloudEnabled || provider === 'local_model',
         provider,
         apiKey,
         openrouterKey,
+        localModelUrl,
+        localModelName,
         history,
       });
       setTurns((prev) => [{ question: q, answer }, ...prev]);
@@ -163,8 +167,40 @@ export function CopilotView({ env, extraChunks = [] }: CopilotViewProps) {
             >
               Gemini
             </button>
+            <button
+              className={`btn-ghost ${provider === 'local_model' ? 'active' : ''}`}
+              style={{ padding: '4px 10px', fontSize: 12 }}
+              onClick={() => setProvider('local_model')}
+            >
+              Local Pretrained (Ollama / OpenWebUI)
+            </button>
           </div>
-          {provider === 'openrouter' ? (
+          {provider === 'local_model' ? (
+            <div className="grid-2" style={{ gap: 10 }}>
+              <label style={{ fontSize: 12.5 }}>
+                Local OpenAI-Compatible API Endpoint:
+                <input
+                  type="text"
+                  className="text-input"
+                  style={{ width: '100%', marginTop: 6 }}
+                  value={localModelUrl}
+                  onChange={(e) => setLocalModelUrl(e.target.value)}
+                  placeholder="http://localhost:11434/v1"
+                />
+              </label>
+              <label style={{ fontSize: 12.5 }}>
+                Local Model Name:
+                <input
+                  type="text"
+                  className="text-input"
+                  style={{ width: '100%', marginTop: 6 }}
+                  value={localModelName}
+                  onChange={(e) => setLocalModelName(e.target.value)}
+                  placeholder="llama3 or mistral or qwen2.5"
+                />
+              </label>
+            </div>
+          ) : provider === 'openrouter' ? (
             <label style={{ fontSize: 12.5, display: 'block' }}>
               OpenRouter API Key{' '}
               {ENV_OPENROUTER_KEY
