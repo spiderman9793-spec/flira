@@ -331,8 +331,10 @@ Hard rules:
       } else if (provider === 'openrouter') {
         const orModels = [
           'openrouter/free',
-          'google/gemma-4-31b-it:free',
-          'nvidia/nemotron-3.5-super-vl:free',
+          'meta-llama/llama-3.1-8b-instruct:free',
+          'google/gemma-2-9b-it:free',
+          'qwen/qwen-2.5-7b-instruct:free',
+          'mistralai/mistral-7b-instruct:free',
         ];
         const referer =
           typeof window !== 'undefined' && window.location?.origin
